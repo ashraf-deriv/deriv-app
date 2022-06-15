@@ -19,7 +19,7 @@
         "deploy:production": "echo \"No deploy:production specified\""
     },
     "engines": {
-        "node": "^14.17.1"
+        "node": "^16.15.1"
     },
     "repository": {
         "type": "git",
