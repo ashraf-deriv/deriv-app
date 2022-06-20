@@ -2,7 +2,7 @@
 
 This repository contains the various platforms of the Deriv application.
 
-![CircleCI](https://img.shields.io/circleci/build/github/binary-com/deriv-app) ![Prerequisite](https://img.shields.io/badge/node-%3E%3D14.17.1-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-%3E%3D7.21.0-blue.svg) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+![CircleCI](https://img.shields.io/circleci/build/github/binary-com/deriv-app) ![Prerequisite](https://img.shields.io/badge/node-%3E%3D16.5.1-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-%3E%3D7.21.0-blue.svg) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 ![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/binary-com_deriv-app?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (short format)](https://img.shields.io/sonar/violations/binary-com_deriv-app?server=https%3A%2F%2Fsonarcloud.io)
 [![codecov](https://codecov.io/gh/binary-com/deriv-app/branch/dev/graph/badge.svg?token=LClg2rlZ4z)](https://codecov.io/gh/binary-com/deriv-app)
@@ -38,7 +38,7 @@ This repository contains the various platforms of the Deriv application.
 
 Before running or contribute to this project, you need to have the setup of the following package in your environment.
 
--   node >=14.17.1
+-   node >=16.5.1
 -   npm >=7.21.0
 -   git (for `contribution`)
 
@@ -103,16 +103,16 @@ Before running or contribute to this project, you need to have the setup of the 
 
 ## Packages
 
-| Package name   | Docs                                                                                                                | Version                                                                                                                                  |
-| :------------- | :------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| `Appstore`     | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/appstore/README.md)     | -                                                                                                                                        |
-| `Bot`          | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/bot/README.md)          | -                                                                                                                                        |
-| `Components`   | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/components/README.md)   | -                                                                                                                                        |
-| `Core`         | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/core/README.md)         | -                                                                                                                                        |
-| `P2P`          | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/p2p/README.md)          | [![npm](https://img.shields.io/npm/v/@deriv/p2p.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/@deriv/p2p)             |
-| `Shared`       | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/shared/README.md)       | -                                                                                                                                        |
-| `Trader`       | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/trader/README.md)       | -                                                                                                                                        |
-| `Translations` | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/translations/README.md) | -                                                                                                                                        |
+| Package name   | Docs                                                                                                                | Version                                                                                                                      |
+| :------------- | :------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------- |
+| `Appstore`     | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/appstore/README.md)     | -                                                                                                                            |
+| `Bot`          | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/bot/README.md)          | -                                                                                                                            |
+| `Components`   | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/components/README.md)   | -                                                                                                                            |
+| `Core`         | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/core/README.md)         | -                                                                                                                            |
+| `P2P`          | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/p2p/README.md)          | [![npm](https://img.shields.io/npm/v/@deriv/p2p.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/@deriv/p2p) |
+| `Shared`       | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/shared/README.md)       | -                                                                                                                            |
+| `Trader`       | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/trader/README.md)       | -                                                                                                                            |
+| `Translations` | [![](https://img.shields.io/badge/API%20Docs-readme-orange.svg?style=flat-square)](packages/translations/README.md) | -                                                                                                                            |
 
 ## Working With This Repo
 
