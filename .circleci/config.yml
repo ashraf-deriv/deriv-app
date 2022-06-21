@@ -203,7 +203,7 @@ jobs:
 
     release_production:
         docker:
-            - image: cimg/node:16.15.1
+            - image: cimg/node:16.15.1-browsers
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
