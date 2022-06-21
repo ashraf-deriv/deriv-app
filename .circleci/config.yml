@@ -53,6 +53,11 @@ commands:
                       #   echo "Could not find cache. Bootstrapping..."
                       #   npm run bootstrap
                       # fi
+
+
+                      if [! -d "./node_modules" ]; then
+                        npm run bootstrap
+                      fi
             - save_cache:
                   name: 'Saving node_modules cache'
                   key: node-v{{ .Environment.CACHE_VERSION }}-{{ checksum "CACHE_KEY1" }}
