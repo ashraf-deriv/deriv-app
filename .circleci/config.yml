@@ -41,7 +41,7 @@ commands:
                   command: echo $(find . ./packages/ -maxdepth 2 -name package.json -type f -exec md5sum {} \; | sort -n | md5sum | cut -d" " -f1) >> CACHE_KEY1
             - restore_cache:
                   keys:
-                      - node-v{{ .Environment.CACHE_VERSION }}-{{ checksum "CACHE_KEY1" }}-hehe
+                      - node-v{{ .Environment.CACHE_VERSION }}-{{ checksum "CACHE_KEY1" }}
             - run:
                   name: 'Install npm packages'
                   command: |
@@ -53,14 +53,9 @@ commands:
                       #   echo "Could not find cache. Bootstrapping..."
                       #   npm run bootstrap
                       # fi
-
-
-                      if [! -d "./node_modules" ]; then
-                        npm run bootstrap
-                      fi
             - save_cache:
                   name: 'Saving node_modules cache'
-                  key: node-v{{ .Environment.CACHE_VERSION }}-{{ checksum "CACHE_KEY1" }}-hehe
+                  key: node-v{{ .Environment.CACHE_VERSION }}-{{ checksum "CACHE_KEY1" }}
                   paths:
                       # VERIFY_CACHE_FOLDERS_START (DO NOT REMOVE)
                       node_modules
@@ -165,7 +160,7 @@ commands:
 jobs:
     build:
         docker:
-            - image: cimg/node:16.15
+            - image: cimg/node:16.15.1
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
@@ -173,7 +168,7 @@ jobs:
 
     release_storybook:
         docker:
-            - image: cimg/node:16.15
+            - image: cimg/node:16.15.1
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
@@ -193,7 +188,7 @@ jobs:
 
     release_staging:
         docker:
-            - image: cimg/node:16.15
+            - image: cimg/node:16.15.1
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
@@ -208,7 +203,7 @@ jobs:
 
     release_production:
         docker:
-            - image: cimg/node:16.15
+            - image: cimg/node:16.15.1
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
@@ -225,7 +220,7 @@ jobs:
 
     build_and_test:
         docker:
-            - image: cimg/node:16.15
+            - image: cimg/node:16.15.1
         steps:
             - git_checkout_from_cache
             - npm_install_from_cache
