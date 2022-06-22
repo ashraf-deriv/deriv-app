@@ -1,6 +1,7 @@
 ## Changes:
 
 Please include a summary of the change and which issue is fixed below:
+
 -   ...
 
 ## When you need to add unit test
@@ -15,7 +16,7 @@ Please include a summary of the change and which issue is fixed below:
 
 ## Test coverage checklist (for reviewer)
 
--   [ ] Ensure utility / function has a test case 
+-   [ ] Ensure utility / function has a test case
 -   [ ] Ensure all the tests are passing
 
 ## Type of change
