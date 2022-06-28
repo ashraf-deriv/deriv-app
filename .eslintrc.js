@@ -166,12 +166,6 @@ module.exports = {
                 react: {
                     version: 'detect',
                 },
-                'import/resolver': {
-                    node: {
-                        extensions: ['.ts', '.tsx'],
-                        moduleDirectory: ['src', 'node_modules'],
-                    },
-                },
             },
         },
     ],
