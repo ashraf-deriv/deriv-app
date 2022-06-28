@@ -23,7 +23,7 @@ const getSelectedError = (selected_value, is_from_account) => {
     if (is_from_account) {
         return (
             <Localize
-                i18n_default_text='Transfer from {{selected_value}} is not allowed, Please choose another account from dropdownss'
+                i18n_default_text='Transfer from {{selected_value}} is not allowed, Please choose another account from dropdown'
                 values={{ selected_value }}
             />
         );
