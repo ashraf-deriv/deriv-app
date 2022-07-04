@@ -76,7 +76,6 @@ module.exports = {
         'import/extensions': ['warn', 'never', { jsx: 'always', json: 'always' }],
         'no-sequences': ['warn'],
         'import/no-unresolved': [2, { ignore: ['@deriv/components', '@deriv/shared', '@deriv/components/cashier'] }],
-        // 'import/no-unresolved': 0,
         // react rules
         // 'jsx-quotes'                        : ['error', 'prefer-single'],
         // 'react/jsx-closing-bracket-location': ['error', { selfClosing: 'line-aligned', nonEmpty: 'line-aligned' }],
