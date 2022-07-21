@@ -2,6 +2,20 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import CFDFinancialStpRealAccountSignup from '../cfd-financial-stp-real-account-signup';
 
+jest.mock('@deriv/shared/src/services/ws-methods', () => ({
+    __esModule: true,
+    default: 'mockedDefaultExport',
+    WS: {
+        authorized: {
+            storage: {
+                getSettings: jest.fn(),
+            },
+            paymentAgentTransfer: jest.fn(),
+        },
+        //verifyEmail: jest.fn(() => Promise.resolve()),
+    },
+}));
+
 jest.mock('Stores/connect.js', () => ({
     __esModule: true,
     default: 'mockedDefaultExport',
