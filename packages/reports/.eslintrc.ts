@@ -1,4 +1,4 @@
-import webpackConfig = require('./build/webpack.config-test');
+import webpackConfig from './build/webpack.config-test';
 
 module.exports = {
     extends: [
