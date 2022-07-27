@@ -11,7 +11,7 @@
         "dist"
     ],
     "engines": {
-        "node": "^16.15.1"
+        "node": "^16.16.0"
     },
     "scripts": {
         "build": "rimraf dist && webpack --progress",

@@ -184,7 +184,7 @@ commands:
 jobs:
   build:
     docker:
-      - image: cimg/node:16.15.1
+      - image: cimg/node:16.16.0
     steps:
       - git_checkout_from_cache
       - npm_install_from_cache
@@ -192,7 +192,7 @@ jobs:
 
   release_storybook:
     docker:
-      - image: cimg/node:16.15.1
+      - image: cimg/node:16.16.0
     steps:
       - git_checkout_from_cache
       - npm_install_from_cache
@@ -212,7 +212,7 @@ jobs:
 
   release_staging:
     docker:
-      - image: cimg/node:16.15.1
+      - image: cimg/node:16.16.0
     steps:
       - git_checkout_from_cache
       - npm_install_from_cache
@@ -231,7 +231,7 @@ jobs:
 
   release_production:
     docker:
-      - image: cimg/node:16.15.1
+      - image: cimg/node:16.16.0
     steps:
       - git_checkout_from_cache
       - npm_install_from_cache
@@ -272,7 +272,7 @@ jobs:
 
   build_and_test:
     docker:
-      - image: cimg/node:16.15.1
+      - image: cimg/node:16.16.0
     steps:
       - git_checkout_from_cache
       - npm_install_from_cache
